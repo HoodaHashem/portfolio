@@ -1,0 +1,16 @@
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.socialLink {
+  list-style: none;
+  color: white;
+  font-size: 25px;
+}
+
+.socialLink a {
+  color: white;
+}
