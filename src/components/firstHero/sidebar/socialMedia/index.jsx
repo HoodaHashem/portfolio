@@ -20,7 +20,7 @@ const SocialMedia = () => {
         </a>
       </li>
       <li className="socialLink">
-        <a href="https://twitter.com/MahmoudHashem26" target="_blank">
+        <a href="https://x.com/HoodaHashem" target="_blank">
           <FaXTwitter />
         </a>
       </li>
