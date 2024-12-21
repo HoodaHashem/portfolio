@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import "./index.css";
 
-function PrimaryBtn({ title }) {
-  return <button className="pBtn">{title}</button>;
+function PrimaryBtn({ children }) {
+  return <button className="pBtn">{children}</button>;
 }
 
 PrimaryBtn.propTypes = {
-  title: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default PrimaryBtn;

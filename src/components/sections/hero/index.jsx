@@ -3,6 +3,7 @@ import Sidebar from "../../sidebar";
 import BackText from "../../backText";
 import BackLight from "../../backlight";
 import PrimaryBtn from "../../primaryBtn";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -18,9 +19,19 @@ const Hero = () => {
           />
           <h1 className="heroName">MAHMOUD HASHEM</h1>
           <div className="imgBox">
-            <PrimaryBtn title={"View Portfolio"} />
+            <PrimaryBtn>
+              <div className="heroBtnContentViewPortfolio">
+                <FaArrowLeft />
+                <p>View Portfolio</p>
+              </div>
+            </PrimaryBtn>
             <img className="heroImg" src="./me.png" alt="Mahmoud Hashem" />
-            <PrimaryBtn title={"Get In Touch"} />
+            <PrimaryBtn>
+              <div className="heroBtnGetInTouch">
+                <FaArrowRight />
+                <p>Get In Touch</p>
+              </div>
+            </PrimaryBtn>
           </div>
 
           <div className="heroBackground">

@@ -5,6 +5,7 @@
 }
 .heroSidebar {
   position: absolute;
+  z-index: 10;
 }
 
 .heroContent {
@@ -21,7 +22,7 @@
   font-size: 5rem;
   font-style: italic;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   top: 100px;
   z-index: -1;
 }
@@ -47,4 +48,19 @@
   width: 100%;
   gap: 450px;
   align-items: center;
+}
+
+.heroBtnContentViewPortfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroBtnGetInTouch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row-reverse;
 }

@@ -22,8 +22,8 @@
     180deg,
     var(--color-light-blue),
     var(--color-blue),
-    var(--color-deep-purple),
-    var(--color-purple)
+    var(--color-purple),
+    var(--color-pink-dark)
   );
   -webkit-background-clip: text;
   background-clip: text;

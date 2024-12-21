@@ -12,7 +12,7 @@ const Navbar = () => {
         <li className="navLink">Portfolio</li>
         <li className="navLink">Contact me</li>
       </ul>
-      <PrimaryBtn title={"Hire Me"} />
+      <PrimaryBtn>Hire Me</PrimaryBtn>
     </div>
   );
 };
