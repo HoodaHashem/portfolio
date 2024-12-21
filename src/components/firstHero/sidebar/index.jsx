@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <div className="stickFollowMe">
       <SocialMedia />
-      <p className="activeText">Follow Me</p>
+      <p className="activeText">Contact Me</p>
     </div>
   );
 };
