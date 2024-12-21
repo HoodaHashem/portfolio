@@ -1,12 +1,15 @@
 import "./App.css";
-import Sidebar from "./components/firstHero/sidebar";
-import Navbar from "./components/navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Sidebar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

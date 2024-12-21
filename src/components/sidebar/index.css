@@ -17,7 +17,7 @@
   content: "";
   position: absolute;
   height: 2px;
-  background: white;
+  background: #c5c5c5;
   width: 40px;
   top: 12px;
   right: -60px;
@@ -28,7 +28,7 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-left: 6px solid white;
+  border-left: 6px solid #c5c5c5;
   border-right: 6px solid transparent;
   border-bottom: 6px solid transparent;
   border-top: 6px solid transparent;

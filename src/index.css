@@ -1,7 +1,16 @@
 :root {
-  --primary-color
+  --color-pink: #f72585;
+  --color-purple: #7209b7;
+  --color-deep-purple: #3a0ca3;
+  --color-light-blue: #4cc9f0;
+  --color-blue: #4361ee;
+  --color-pink-dark: #f72585;
+  --color-dark-gray: #3b3b3b;
+  --color-mid-gray: #808080;
+  --color-gray: #c5c5c5;
+  --bg-color: #0e0f17;
 }
 
 body {
-  background: #0e0f17;
+  background: var(--bg-color);
 }

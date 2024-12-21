@@ -1,0 +1,63 @@
+.pBtn {
+  font-weight: 400;
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  color: white;
+}
+
+.pBtn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #10002b;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.pBtn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    var(--color-pink),
+    var(--color-purple),
+    var(--color-deep-purple),
+    var(--color-light-blue),
+    var(--color-pink-dark)
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  animation: glowingBg 20s linear infinite alternate;
+}
+.pBtn:hover::after {
+  background: transparent;
+}
+
+@keyframes glowingBg {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

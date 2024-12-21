@@ -1,3 +1,4 @@
+import PrimaryBtn from "../primaryBtn";
 import "./index.css";
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <li className="navLink">Portfolio</li>
         <li className="navLink">Contact me</li>
       </ul>
-      <button className="navBtn">Hire Me</button>
+      <PrimaryBtn title={"Hire Me"} />
     </div>
   );
 };

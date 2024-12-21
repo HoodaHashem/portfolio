@@ -1,0 +1,20 @@
+.backLight {
+  position: relative;
+  width: 500px;
+  min-height: 500px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.backLight::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  min-height: 500px;
+  border-radius: 100%;
+  background: var(--color-deep-purple);
+  filter: blur(200px);
+}

@@ -1,0 +1,50 @@
+.heroContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.heroSidebar {
+  position: absolute;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.heroName {
+  color: white;
+  position: absolute;
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 2px;
+  top: 100px;
+  z-index: -1;
+}
+
+.heroBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -2;
+}
+
+.heroImg {
+  position: absolute;
+  width: 500px;
+  top: 150px;
+}
+
+.imgBox {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  gap: 450px;
+  align-items: center;
+}

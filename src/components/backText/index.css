@@ -1,0 +1,32 @@
+.backText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.backText p {
+  -webkit-text-stroke: 2px var(--color-dark-gray);
+  color: transparent;
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 2px;
+  z-index: -1;
+}
+
+.backText h1 {
+  position: absolute;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(
+    180deg,
+    var(--color-light-blue),
+    var(--color-blue),
+    var(--color-deep-purple),
+    var(--color-purple)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+}
