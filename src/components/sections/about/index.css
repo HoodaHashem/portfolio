@@ -1,0 +1,75 @@
+.aboutSection {
+  position: relative;
+}
+
+.AboutBacklightContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50px;
+  z-index: -1;
+}
+
+.aboutRightColor {
+  background: var(--color-purple);
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  filter: blur(200px);
+}
+
+.aboutLeftColor {
+  background: var(--color-pink-dark);
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  filter: blur(230px);
+}
+
+.paragraphContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.aboutParagraph {
+  width: 70%;
+  color: var(--color-gray);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.aboutBoxs div {
+  position: relative;
+  width: 20rem;
+  height: 15rem;
+  text-align: center;
+}
+.aboutBoxs div h1 {
+  font-size: 2rem;
+}
+.aboutBoxs div h2 {
+  color: white;
+}
+
+.aboutBoxs div p {
+  color: var(--color-gray);
+}
+.aboutBoxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.aboutBoxs div:not(:first-child)::after {
+  position: absolute;
+  content: "";
+  width: 1.5px;
+  height: 100px;
+  background: var(--color-dark-gray);
+  top: 100px;
+  left: -25px;
+}

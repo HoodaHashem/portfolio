@@ -7,7 +7,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" className="heroSection">
       <div className="heroContainer">
         <div className="heroSidebar">
           <Sidebar />

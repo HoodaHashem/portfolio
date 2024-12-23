@@ -1,4 +1,5 @@
 import Navbar from "../../components/navbar";
+import About from "../../components/sections/about";
 import Hero from "../../components/sections/hero";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <>
       <Navbar />
       <Hero />
+      <About />
     </>
   );
 }
