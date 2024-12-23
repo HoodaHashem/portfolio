@@ -28,17 +28,17 @@ const About = () => {
 
       <div className="aboutBoxs">
         <div className="aboutFirst">
-          <h1 className="activeText">200+</h1>
-          <h2>Assests created</h2>
+          <h1 className="activeText">25 +</h1>
+          <h2>Projects Completed</h2>
           <p>after this my skills on prime.</p>
         </div>
         <div className="aboutSecond">
-          <h1 className="activeText">4+</h1>
+          <h1 className="activeText">4 +</h1>
           <h2>Years of Experience</h2>
           <p>Hard working and learning 2+ years makes me suitable.</p>
         </div>
         <div className="aboutThird">
-          <h1 className="activeText">50+</h1>
+          <h1 className="activeText">15 +</h1>
           <h2>Happy Clients</h2>
           <p>I make sure to make every client happy and satisfy.</p>
         </div>
