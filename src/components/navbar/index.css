@@ -11,13 +11,18 @@
   flex: auto;
 }
 
+.navLink a {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
 .navLink {
   font-weight: 400;
   list-style: none;
   color: white;
   cursor: pointer;
 }
-
 .activeText {
   animation: glowingText 7s linear infinite alternate;
 }

@@ -1,5 +1,6 @@
 import PrimaryBtn from "../primaryBtn";
 import "./index.css";
+
 const Navbar = () => {
   return (
     <div className="navContainer">
@@ -7,10 +8,18 @@ const Navbar = () => {
         <img className="navLogo" src="./navlogo.svg" alt="Logo" />
       </div>
       <ul className="navbarList">
-        <li className="navLink activeText">Home</li>
-        <li className="navLink">About me</li>
-        <li className="navLink">Portfolio</li>
-        <li className="navLink">Contact me</li>
+        <li className="navLink">
+          <a href="#home">Home</a>
+        </li>
+        <li className="navLink">
+          <a href="#about">About me</a>
+        </li>
+        <li className="navLink">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li className="navLink">
+          <a href="#contact">Contact me</a>
+        </li>
       </ul>
       <PrimaryBtn>Hire Me</PrimaryBtn>
     </div>

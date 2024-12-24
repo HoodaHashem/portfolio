@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-pink: #f72585;
   --color-purple: #7209b7;

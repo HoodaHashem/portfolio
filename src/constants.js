@@ -49,3 +49,34 @@ export const projects = [
       "ShieldIn is a browser extension designed to improve the LinkedIn experience by blocking unwanted advertisements. Developed with JavaScript, HTML, and CSS, ShieldIn targets the ad-serving elements on LinkedIn's platform, preventing intrusive ads from interrupting users' browsing sessions. The extension works seamlessly in the background, identifying and removing ads from the feed, profile pages, and other sections of LinkedIn. It is fully customizable, allowing users to choose their preferred level of ad blocking, ensuring a cleaner and more focused browsing experience. Through this project, I gained hands-on experience with browser extension development, content script manipulation, and DOM element filtering, ultimately creating a tool that enhances productivity and user experience on LinkedIn.",
   },
 ];
+
+export const comments = [
+  {
+    image: "person1.png",
+    name: "Ali Ahmed",
+    postion: "CEO of Company",
+    comment:
+      "As a solo freelancer, Mahmoud demonstrated incredible skill and dedication to our project. Despite working alone, He managed everything from start to finish with professionalism and efficiency. His ability to deliver high-quality results while keeping me informed every step of the way was impressive.",
+  },
+  {
+    image: "person2.png",
+    name: "Nada Fort",
+    postion: "Market Manager",
+    comment:
+      "I was initially hesitant to hire a single freelancer for a project of this scale, but Mahmoud quickly proved to be the right choice. His technical expertise, problem-solving ability, and clear communication made the entire process smooth and enjoyable. Highly recommended!",
+  },
+  {
+    image: "person3.png",
+    name: "Mike Jhon",
+    postion: "Founder of Company",
+    comment:
+      "Working directly with Mahmoud felt like having a dedicated expert on my team. He understood my needs, tailored the project to meet them perfectly, and delivered ahead of schedule. It’s rare to find such a talented and reliable solo freelancer.",
+  },
+  {
+    image: "person4.png",
+    name: "Mahran Khalifa",
+    postion: "CEO of Company",
+    comment:
+      "If you’re looking for someone who can handle a project independently with outstanding results, look no further than Mahmoud. His work ethic and attention to detail are second to none. I’ll definitely hire him again for future projects.",
+  },
+];
