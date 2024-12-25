@@ -80,3 +80,36 @@ export const comments = [
       "If you’re looking for someone who can handle a project independently with outstanding results, look no further than Mahmoud. His work ethic and attention to detail are second to none. I’ll definitely hire him again for future projects.",
   },
 ];
+
+export const faqData = [
+  {
+    question: "What services do you offer?",
+    answer:
+      "I specialize in full-stack development, backend architecture, AI-driven solutions, and automation tools. Whether it's building an end-to-end application, optimizing existing systems, or creating custom solutions, I deliver high-quality results tailored to your needs.",
+  },
+  {
+    question: "How do you approach a new project?",
+    answer:
+      "I start by thoroughly understanding your goals and requirements. From there, I create a detailed plan that includes milestones and deliverables. Throughout the project, I maintain open communication, provide regular updates, and incorporate feedback to ensure your satisfaction.",
+  },
+  {
+    question: "How do I get started with you?",
+    answer:
+      "Getting started is easy! Reach out to me with your project details and requirements. We’ll discuss your goals, set expectations, and begin crafting a solution tailored specifically to you.",
+  },
+  {
+    question: "What is your typical turnaround time for a project?",
+    answer:
+      "The timeline depends on the complexity and scope of the project. After reviewing your requirements, I provide a clear estimate with milestones and deadlines.",
+  },
+  {
+    question: "How do you ensure the quality of your work?",
+    answer:
+      "I follow a meticulous development process that includes thorough planning, code testing, and review. I prioritize maintainability, scalability, and security, ensuring that the solution I deliver meets the highest standards.",
+  },
+  {
+    question: "Do you offer post-delivery support?",
+    answer:
+      "Yes, I provide post-delivery support to ensure your system runs smoothly. I also offer maintenance and updates as needed.",
+  },
+];
