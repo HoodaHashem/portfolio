@@ -16,6 +16,9 @@
   align-items: center;
   width: 200px;
   height: 300px;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+  transform-origin: center center;
 }
 
 .leftCards {
@@ -57,7 +60,7 @@
   left: -100px;
 }
 
-.sexthCard {
+.sixthCard {
   position: absolute;
   z-index: 1;
   left: 0;
@@ -65,12 +68,8 @@
 }
 
 .cardImg {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 15px;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
 }
 
 .cardImg img {
@@ -234,20 +233,6 @@
   border-radius: 100%;
   animation: glowingBg 20s linear infinite alternate;
 }
-.portfolioContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.peripheralCard {
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  backface-visibility: hidden;
-  transform-origin: center center;
-}
-
 .nav-button {
   transition: all 0.3s ease;
   transform: scale(1);
@@ -261,118 +246,6 @@
   opacity: 0.5;
   cursor: not-allowed;
   transform: scale(0.95);
-}
-
-.sliding-right .card-first {
-  transform: translateX(-100%) scale(0.8);
-  opacity: 0;
-}
-
-.sliding-right .card-second {
-  transform: translateX(-50%) scale(0.85);
-}
-
-.sliding-right .card-third {
-  transform: translateX(-30%) scale(0.9);
-}
-
-.sliding-right .card-fifth {
-  transform: translateX(30%) scale(0.9);
-}
-
-.sliding-right .card-sixth {
-  transform: translateX(50%) scale(0.85);
-}
-
-.sliding-right .card-seventh {
-  transform: translateX(100%) scale(0.8);
-  opacity: 0;
-}
-
-.sliding-left .card-first {
-  transform: translateX(100%) scale(0.8);
-  opacity: 0;
-}
-
-.sliding-left .card-second {
-  transform: translateX(50%) scale(0.85);
-}
-
-.sliding-left .card-third {
-  transform: translateX(30%) scale(0.9);
-}
-
-.sliding-left .card-fifth {
-  transform: translateX(-30%) scale(0.9);
-}
-
-.sliding-left .card-sixth {
-  transform: translateX(-50%) scale(0.85);
-}
-
-.sliding-left .card-seventh {
-  transform: translateX(-100%) scale(0.8);
-}
-
-.centerCard.sliding-right {
-  transform: translateX(-5%) scale(0.95);
-  opacity: 0.8;
-}
-
-.centerCard.sliding-left {
-  transform: translateX(5%) scale(0.95);
-  opacity: 0.8;
-}
-
-.card-image {
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1);
-}
-
-.peripheralCard:hover .card-image {
-  transform: scale(1.1);
-}
-
-.center-image {
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1);
-}
-
-.centerCard:hover .center-image {
-  transform: scale(1.05);
-}
-
-.card-title,
-.card-subtitle,
-.card-description {
-  transition: all 0.3s ease;
-}
-
-.sliding-right .card-title,
-.sliding-left .card-title {
-  transform: translateX(-10px);
-  opacity: 0;
-  transition-delay: 0.1s;
-}
-
-.sliding-right .card-subtitle,
-.sliding-left .card-subtitle {
-  transform: translateX(-10px);
-  opacity: 0;
-  transition-delay: 0.2s;
-}
-
-.sliding-right .card-description,
-.sliding-left .card-description {
-  transform: translateX(-10px);
-  opacity: 0;
-  transition-delay: 0.3s;
-}
-
-.leftCards .peripheralCard img,
-.rightCards .peripheralCard img,
-.centerCard img {
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .secondCard {
@@ -399,7 +272,7 @@
   transform: translateX(0) scale(0.9);
 }
 
-.sexthCard {
+.sixthCard {
   position: absolute;
   z-index: 1;
   left: 0;
@@ -423,15 +296,12 @@
   transform: scale(1.02);
 }
 
-.peripheralCard,
-.centerCard {
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
-
 .peripheralCard:hover {
   transform: translateY(-5px) scale(1.02) rotateY(2deg);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.peripheralCard:hover .cardImg {
+  transform: scale(1.1);
 }
 
 .centerCard:hover {
@@ -439,85 +309,106 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-.card-enter {
-  opacity: 0;
-  transform: scale(0.9);
-}
-
-.card-enter-active {
-  opacity: 1;
+.centerCardImg {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.edge-card {
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+.centerCard:hover .centerCardImg {
+  transform: scale(1.05);
 }
 
-.sliding-right .thirdCard.edge-card {
-  animation: exitRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+.centerCard.sliding-right {
+  transform: scale(0.95);
+  opacity: 0.8;
 }
 
-.sliding-left .seventhCard.edge-card {
-  animation: exitLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+.centerCard.sliding-left {
+  transform: scale(0.95);
+  opacity: 0.8;
 }
 
-@keyframes exitRight {
-  0% {
-    transform: translateX(0) scale(0.9);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(150%) scale(0.7) rotate(10deg);
-    opacity: 0;
-  }
-}
-
-@keyframes exitLeft {
-  0% {
-    transform: translateX(0) scale(0.9);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-150%) scale(0.7) rotate(-10deg);
-    opacity: 0;
-  }
-}
-
-.sliding-right .seventhCard.edge-card {
-  animation: enterRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-.sliding-left .thirdCard.edge-card {
-  animation: enterLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-@keyframes enterRight {
-  0% {
-    transform: translateX(150%) scale(0.7) rotate(10deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) scale(0.9) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-@keyframes enterLeft {
-  0% {
-    transform: translateX(-150%) scale(0.7) rotate(-10deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) scale(0.9) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-.exiting {
+/* here */
+.sliding-right.firstCard {
+  transform: translateX(-100%) scale(0.8);
   opacity: 0;
-  transform: scale(0.9);
-  pointer-events: none;
+}
+
+.sliding-right.secondCard {
+  transform: translateX(-50%) scale(0.85);
+}
+
+.sliding-right.thirdCard {
+  transform: translateX(-30%) scale(0.9);
+}
+
+.sliding-right.fifthCard {
+  transform: translateX(30%) scale(0.9);
+}
+
+.sliding-right.sixthCard {
+  transform: translateX(50%) scale(0.85);
+}
+
+.sliding-right.seventhCard {
+  transform: translateX(100%) scale(0.8);
+  opacity: 0;
+}
+
+.sliding-left.firstCard {
+  transform: translateX(100%) scale(0.8);
+  opacity: 0;
+}
+
+.sliding-left.secondCard {
+  transform: translateX(50%) scale(0.85);
+}
+
+.sliding-left.thirdCard {
+  transform: translateX(30%) scale(0.9);
+}
+
+.sliding-left.fifthCard {
+  transform: translateX(-30%) scale(0.9);
+}
+
+.sliding-left.sixthCard {
+  transform: translateX(-50%) scale(0.85);
+}
+
+.sliding-left.seventhCard {
+  transform: translateX(-100%) scale(0.8);
+}
+/* end */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.zoomIn {
+  animation: zoomIn 0.8s ease-in-out;
 }
 
 @keyframes glowingBg {
