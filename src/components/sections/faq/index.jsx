@@ -2,9 +2,8 @@ import { useState } from "react";
 import BackText from "../../backText";
 import "./index.css";
 import { faqData } from "../../../constants";
-import BackLight from "../../backlight";
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);

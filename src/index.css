@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+}
+
 :root {
   --color-pink: #f72585;
   --color-purple: #7209b7;

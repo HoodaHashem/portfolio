@@ -15,7 +15,11 @@ const Portfolio = () => {
       </div>
       <PortfolioCards />
       <div className="portfolioBtnContainer">
-        <PrimaryBtn>
+        <PrimaryBtn
+          onClick={() => {
+            window.open("https://github.com/HoodaHashem", "_blank");
+          }}
+        >
           <div className="portfolioBtn">
             <FaGithub size={"25"} />
             <p>View More</p>

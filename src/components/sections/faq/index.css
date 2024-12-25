@@ -18,40 +18,15 @@
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  filter: blur(150px);
-  opacity: 0.8;
-  animation: glow 5s infinite alternate ease-in-out;
+  filter: blur(250px);
 }
 
 .fqaRightColor {
-  background: var(--color-purple);
+  background: var(--color-blue);
 }
 
 .fqaLeftColor {
   background: var(--color-pink-dark);
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes glow {
-  from {
-    opacity: 0.7;
-    filter: blur(150px);
-  }
-  to {
-    opacity: 1;
-    filter: blur(200px);
-  }
 }
 
 .faq {

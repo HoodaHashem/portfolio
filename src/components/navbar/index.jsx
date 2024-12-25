@@ -21,7 +21,15 @@ const Navbar = () => {
           <a href="#contact">Contact me</a>
         </li>
       </ul>
-      <PrimaryBtn>Hire Me</PrimaryBtn>
+      <PrimaryBtn
+        onClick={() => {
+          document
+            .getElementById("contact")
+            ?.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        <p>Hire Me</p>
+      </PrimaryBtn>
     </div>
   );
 };

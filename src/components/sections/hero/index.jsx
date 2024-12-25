@@ -19,14 +19,26 @@ const Hero = () => {
           />
           <h1 className="heroName">MAHMOUD HASHEM</h1>
           <div className="imgBox">
-            <PrimaryBtn>
+            <PrimaryBtn
+              onClick={() => {
+                document
+                  .getElementById("portfolio")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               <div className="heroBtnContentViewPortfolio">
                 <FaArrowLeft />
                 <p>View Portfolio</p>
               </div>
             </PrimaryBtn>
             <img className="heroImg" src="./me.png" alt="Mahmoud Hashem" />
-            <PrimaryBtn>
+            <PrimaryBtn
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               <div className="heroBtnGetInTouch">
                 <FaArrowRight />
                 <p>Get In Touch</p>
