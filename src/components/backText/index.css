@@ -29,3 +29,9 @@
   -webkit-text-fill-color: transparent;
   letter-spacing: 5px;
 }
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
