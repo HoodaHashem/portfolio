@@ -1,5 +1,6 @@
 .aboutSection {
   position: relative;
+  padding: 20px;
 }
 
 .AboutBacklightContainer {
@@ -11,19 +12,20 @@
   z-index: -1;
 }
 
-.aboutRightColor {
-  background: var(--color-purple);
+.aboutRightColor,
+.aboutLeftColor {
   width: 300px;
   height: 300px;
   border-radius: 100%;
+}
+
+.aboutRightColor {
+  background: var(--color-purple);
   filter: blur(200px);
 }
 
 .aboutLeftColor {
   background: var(--color-pink-dark);
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
   filter: blur(230px);
 }
 
@@ -41,27 +43,31 @@
   font-size: 1.2rem;
 }
 
+.aboutBoxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
 .aboutBoxs div {
   position: relative;
   width: 20rem;
   height: 15rem;
   text-align: center;
 }
+
 .aboutBoxs div h1 {
   font-size: 2rem;
 }
+
 .aboutBoxs div h2 {
   color: white;
 }
 
 .aboutBoxs div p {
   color: var(--color-gray);
-}
-.aboutBoxs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
 }
 
 .aboutBoxs div:not(:first-child)::after {
@@ -74,8 +80,78 @@
   left: -25px;
 }
 
-@media screen and (max-width: 768px) {
+/* Large Tablets and small laptops */
+@media screen and (max-width: 1024px) {
+  .aboutParagraph {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .aboutBoxs div {
+    width: 18rem;
+    height: 14rem;
+  }
 }
 
+/* Tablets & large phones */
+@media screen and (max-width: 768px) {
+  .aboutBoxs {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .aboutBoxs div {
+    width: 100%;
+    max-width: 16rem;
+  }
+
+  .aboutBoxs div:not(:first-child)::after {
+    display: none;
+  }
+
+  .aboutRightColor,
+  .aboutLeftColor {
+    width: 200px;
+    height: 200px;
+  }
+
+  .aboutParagraph {
+    width: 95%;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile phones */
 @media screen and (max-width: 480px) {
+  .AboutBacklightContainer {
+    top: 30px;
+  }
+
+  .aboutRightColor,
+  .aboutLeftColor {
+    width: 150px;
+    height: 150px;
+  }
+
+  .aboutBoxs div {
+    height: auto;
+    padding: 15px;
+  }
+
+  .aboutBoxs div h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Small mobile phones */
+@media screen and (max-width: 320px) {
+  .aboutRightColor,
+  .aboutLeftColor {
+    width: 120px;
+    height: 120px;
+  }
+
+  .aboutBoxs div h1 {
+    font-size: 1.5rem;
+  }
 }
