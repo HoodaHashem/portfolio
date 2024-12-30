@@ -35,3 +35,15 @@
   top: 7px;
   right: -70px;
 }
+
+@media screen and (max-width: 480px) {
+  .stickFollowMe p::after {
+    top: 12px;
+  }
+  .stickFollowMe p::before {
+    top: 7px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

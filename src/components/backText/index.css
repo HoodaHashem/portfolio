@@ -12,6 +12,7 @@
   font-weight: 900;
   letter-spacing: 2px;
   z-index: -1;
+  text-align: center;
 }
 
 .backText h1 {
@@ -28,10 +29,40 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 5px;
+  text-align: center;
 }
 
+/* Large Tablets and small labtops */
+@media screen and (max-width: 1024px) {
+  .backText p {
+    font-size: 3rem;
+    -webkit-text-stroke: 2px var(--color-dark-gray);
+  }
+  .backText h1 {
+    font-size: 2rem;
+  }
+}
+/* Tablets & large phones */
 @media screen and (max-width: 768px) {
+  .backText p {
+    font-size: 3rem;
+    -webkit-text-stroke: 1px var(--color-dark-gray);
+  }
+  .backText h1 {
+    font-size: 2rem;
+  }
+}
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .backText p {
+    font-size: 2rem;
+    -webkit-text-stroke: 0.8px var(--color-dark-gray);
+  }
+  .backText h1 {
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 480px) {
+/* Small mobile phones */
+@media screen and (max-width: 320px) {
 }

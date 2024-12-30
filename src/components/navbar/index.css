@@ -123,6 +123,9 @@
   .navLogo {
     width: 80px;
   }
+  .navContainer {
+    padding: 10px;
+  }
 }
 
 /* Keyframes Goes here */
