@@ -55,8 +55,9 @@
 /* Mobile phones */
 @media screen and (max-width: 480px) {
   .backText p {
-    font-size: 2rem;
+    font-size: 3rem;
     -webkit-text-stroke: 0.8px var(--color-dark-gray);
+    padding: 10px;
   }
   .backText h1 {
     font-size: 1.5rem;
