@@ -125,7 +125,11 @@ const PortfolioCards = () => {
             />
           </div>
         </div>
-        <button onClick={nextCard}>
+        <button
+          onClick={prevCard}
+          disabled={isAnimating}
+          className={`nav-button ${isAnimating ? "disabled" : ""}`}
+        >
           <FaArrowRightLong />
         </button>
       </div>

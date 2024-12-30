@@ -236,6 +236,7 @@
 .nav-button {
   transition: all 0.3s ease;
   transform: scale(1);
+  z-index: 20;
 }
 
 .nav-button:hover:not(.disabled) {
