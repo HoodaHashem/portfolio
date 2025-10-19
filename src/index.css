@@ -1,13 +1,16 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-x: clip !important;
+  width: 100vw;
 }
 
 body {
   background: var(--bg-color);
   margin: 0;
-  width: 100vw;
   overflow-x: hidden;
   overflow-x: clip !important;
+  width: 100vw;
 }
 body::before {
   content: "";
@@ -16,8 +19,10 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
-    linear-gradient(rgba(199, 120, 221, 0.03) 1px, transparent 1px),
+  background-image: linear-gradient(
+      rgba(199, 120, 221, 0.03) 1px,
+      transparent 1px
+    ),
     linear-gradient(90deg, rgba(199, 120, 221, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
