@@ -126,7 +126,7 @@ const PortfolioCards = () => {
           </div>
         </div>
         <button
-          onClick={prevCard}
+          onClick={nextCard}
           disabled={isAnimating}
           className={`nav-button ${isAnimating ? "disabled" : ""}`}
         >

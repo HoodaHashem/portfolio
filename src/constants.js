@@ -59,13 +59,6 @@ export const comments = [
       "As a solo freelancer, Mahmoud demonstrated incredible skill and dedication to our project. Despite working alone, He managed everything from start to finish with professionalism and efficiency. His ability to deliver high-quality results while keeping me informed every step of the way was impressive.",
   },
   {
-    image: "person2.png",
-    name: "Nada Fort",
-    postion: "Market Manager",
-    comment:
-      "I was initially hesitant to hire a single freelancer for a project of this scale, but Mahmoud quickly proved to be the right choice. His technical expertise, problem-solving ability, and clear communication made the entire process smooth and enjoyable. Highly recommended!",
-  },
-  {
     image: "person3.png",
     name: "Mike Jhon",
     postion: "Founder of Company",

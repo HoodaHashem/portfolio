@@ -6,7 +6,6 @@ import { IoSend } from "react-icons/io5";
 import {
   FaGithub,
   FaLinkedinIn,
-  FaWhatsapp,
   FaXTwitter,
 } from "react-icons/fa6";
 import { sendForm } from "@emailjs/browser";
@@ -157,22 +156,14 @@ const Contact = () => {
           </a>
           <a
             className="social-link"
-            href="https://wa.me/+201551028992"
-            target="_blank"
-          >
-            <FaWhatsapp />
-          </a>
-          <a
-            className="social-link"
-            href="https://www.linkedin.com/in/hooda-hashem"
+            href="https://www.linkedin.com/in/hoodahashem"
             target="_blank"
           >
             <FaLinkedinIn />
           </a>
         </div>
         <div className="contact-info">
-          <div>+20 155 102 8992</div>
-          <div>mahmoudhashem335@gmail.com</div>
+          <div>mahmoud.hashem.dev@gmail.com</div>
         </div>
       </div>
       <div className="backLightBox">

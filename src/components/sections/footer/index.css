@@ -62,8 +62,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding-top: 20px;
   position: relative;
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -84,5 +90,22 @@
   .footer-links {
     flex-direction: column;
     gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-links {
+    gap: 12px;
+  }
+
+  .footer-links{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .social-link {
+    font-size: 18px;
+  }
+
+  .footer-text {
+    font-size: 13px;
   }
 }

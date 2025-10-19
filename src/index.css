@@ -3,7 +3,8 @@ html {
 }
 
 body {
-
+  background: var(--bg-color);
+  margin: 0;
   overflow-x: hidden;
 }
 
@@ -18,10 +19,6 @@ body {
   --color-mid-gray: #808080;
   --color-gray: #c5c5c5;
   --bg-color: #0e0f17;
-}
-
-body {
-  background: var(--bg-color);
 }
 
 /* Custom Scrollbar Styles */
