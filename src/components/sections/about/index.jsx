@@ -1,15 +1,48 @@
+import { motion } from "framer-motion";
 import BackText from "../../backText";
 import "./index.css";
 
 const About = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: "easeOut" },
+    },
+  };
+
   return (
-    <section id="about" className="aboutSection">
+    <motion.section
+      id="about"
+      className="aboutSection"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 1.5 }}
+    >
       <BackText topText={"WHO AM I ?"} backText={"ABOUT ME"} />
+
       <div className="AboutBacklightContainer">
         <div className="aboutLeftColor" />
         <div className="aboutRightColor" />
       </div>
-      <div className="paragraphContainer">
+
+      <motion.div
+        className="paragraphContainer"
+        variants={itemVariants}
+      >
         <p className="aboutParagraph">
           Hello, I&apos;m Mahmoud Hashem, a dedicated and versatile full stack
           engineer with over 4 years of experience crafting robust digital
@@ -24,31 +57,47 @@ const About = () => {
           turn your innovative ideas into powerful, efficient applications that
           make a real impact.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="aboutBoxs">
-        <div className="aboutFirst">
-          <h1 className="activeText">25 +</h1>
-          <h2>Projects Completed</h2>
-          <p>After 25+ compeleted projects my skills on prime.</p>
-        </div>
-        <div className="aboutSecond">
-          <h1 className="activeText">4 +</h1>
-          <h2>Years of Experience</h2>
-          <p>Hard working and learning 2+ years makes me suitable.</p>
-        </div>
-        <div className="aboutThird">
-          <h1 className="activeText">15 +</h1>
-          <h2>Happy Clients</h2>
-          <p>I make sure to make every client happy and satisfy.</p>
-        </div>
-        <div className="aboutFourth">
-          <h1 className="activeText">24/7</h1>
-          <h2>Available Everytime</h2>
-          <p>I&apos;m always available and ready to work, just hit me up!</p>
-        </div>
-      </div>
-    </section>
+      <motion.div
+        className="aboutBoxs"
+        variants={containerVariants}
+      >
+        {[
+          {
+            num: "25 +",
+            title: "Projects Completed",
+            desc: "After 25+ completed projects my skills on prime.",
+          },
+          {
+            num: "4 +",
+            title: "Years of Experience",
+            desc: "Hard working and learning 2+ years makes me suitable.",
+          },
+          {
+            num: "15 +",
+            title: "Happy Clients",
+            desc: "I make sure to make every client happy and satisfy.",
+          },
+          {
+            num: "24/7",
+            title: "Available Everytime",
+            desc: "I&apos;m always available and ready to work, just hit me up!",
+          },
+        ].map((item, index) => (
+          <motion.div
+            className={`aboutBox about${index}`}
+            key={index}
+            variants={itemVariants}
+          >
+            <h1 className="activeText">{item.num}</h1>
+            <h2>{item.title}</h2>
+            <p>{item.desc}</p>
+          </motion.div>
+        ))}
+      </motion.div>
+    </motion.section>
   );
 };
+
 export default About;

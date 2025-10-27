@@ -4,6 +4,7 @@ import BackText from "../../backText";
 import BackLight from "../../backlight";
 import PrimaryBtn from "../../primaryBtn";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -12,38 +13,73 @@ const Hero = () => {
         <div className="heroSidebar">
           <Sidebar />
         </div>
+
         <div className="heroContent">
           <BackText
             topText={"HI, MY NAME IS"}
             backText={"FULL STACK DEVELOPER"}
           />
-          <h1 className="heroName">MAHMOUD HASHEM</h1>
+
+          {/* Animated Name */}
+          <motion.h1
+            className="heroName"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+          >
+            MAHMOUD HASHEM
+          </motion.h1>
+
           <div className="imgBox">
-            <PrimaryBtn
-              onClick={() => {
-                document
-                  .getElementById("portfolio")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
+            {/* Left Button */}
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 1 }}
             >
-              <div className="heroBtnContentViewPortfolio">
-                <FaArrowLeft />
-                <p>View Portfolio</p>
-              </div>
-            </PrimaryBtn>
-            <img className="heroImg" src="./me.png" alt="Mahmoud Hashem" />
-            <PrimaryBtn
-              onClick={() => {
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
+              <PrimaryBtn
+                onClick={() => {
+                  document
+                    .getElementById("portfolio")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                <div className="heroBtnContentViewPortfolio">
+                  <FaArrowLeft />
+                  <p>View Portfolio</p>
+                </div>
+              </PrimaryBtn>
+            </motion.div>
+
+            {/* Hero Image */}
+            <motion.img
+              className="heroImg"
+              src="./me.png"
+              alt="Mahmoud Hashem"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
+            />
+
+            {/* Right Button */}
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 1.4 }}
             >
-              <div className="heroBtnGetInTouch">
-                <FaArrowRight />
-                <p>Get In Touch</p>
-              </div>
-            </PrimaryBtn>
+              <PrimaryBtn
+                onClick={() => {
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                <div className="heroBtnGetInTouch">
+                  <FaArrowRight />
+                  <p>Get In Touch</p>
+                </div>
+              </PrimaryBtn>
+            </motion.div>
           </div>
 
           <div className="heroBackground">
@@ -54,4 +90,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;

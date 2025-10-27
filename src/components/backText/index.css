@@ -31,6 +31,18 @@
   letter-spacing: 5px;
   text-align: center;
 }
+.backText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.backText span {
+  display: inline-block;
+}
 
 /* Large Tablets and small labtops */
 @media screen and (max-width: 1024px) {
